@@ -1,0 +1,11 @@
+[Unit]
+Description=Salus Cron Application
+
+[Timer]
+OnUnitActiveSec=90
+OnBootSec=1min
+Persistent=true
+Unit=salus.cron.service
+
+[Install]
+WantedBy=timers.target

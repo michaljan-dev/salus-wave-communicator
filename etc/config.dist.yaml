@@ -1,0 +1,19 @@
+app:
+  enabled: true
+  enabled_device_button_bathroom: true
+salus:
+  account_client_id:
+  account_device_button_bathroom_id:
+  account_identity_id:
+  account_iot_endpoint:
+  account_password:
+  account_region:
+  account_user_pool_id:
+  account_username:
+  device_button_bathroom_boiler_working_time: 20
+  gateway_euid:
+  gateway_host:
+wave:
+  access_code:
+  password:
+  serial_number:

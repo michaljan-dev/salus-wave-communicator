@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section>
+    {% if flags.last_date_app_run %}    
+        <div>App last date run: {{ flags.last_date_app_run }}</div>
+    {% endif %}
+    {% if flags.last_date_heat_on %}    
+        <div>Heat last date on: {{ flags.last_date_heat_on }}</div>
+    {% endif %}
+    {% if flags.last_date_button_bathroom_on %}   
+        <div>Bathroom button last date on: {{ flags.last_date_button_bathroom_on }}</div>
+    {% endif %}
+</section>
+
+<section>
+    <h1>Logs</h1>
+    <p>Total: {{ logs|length }}</p>
+    {% if logs %}
+        <ul>
+            {% for log in logs %}
+                <li>{{ loop.index }} - {{ log }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No logs available.</p>
+    {% endif %}
+</section>
+{% endblock %}

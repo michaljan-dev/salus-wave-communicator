@@ -1,0 +1,15 @@
+[Unit]
+Description=Salus Cron Application
+
+[Service]
+User=ubuntu
+WorkingDirectory=/var/www/html/salus/
+Environment="PATH=/home/ubuntu/.local/bin:$PATH"
+ExecStart=/bin/bash -c 'poetry run python cron.py'
+Restart=on-failure
+RestartSec=10
+KillMode=control-group
+TimeoutStartSec=40
+TimeoutStopSec=10
+WatchdogSec=60
+NotifyAccess=main

@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "salus"
+version = "0.0.1"
+description = "Central underfloor heating control system with a main Bosch Wave thermostat and Salus-controlled zones."
+authors = ["na"]
+license = "na"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+crypto = "^1.4.1"
+pycryptodome = "^3.20"
+slixmpp = "^1.8"
+async-timeout = "^4.0"
+nest_asyncio = "^1.6"
+pyit600 = "^0.5.1"
+tinydb = "^4.8.0"
+flask = "^3.0.3"
+boto3 = "1.34.131"
+requests = "^2.32.3"
+aioboto3 = "^13.1.1"
+sdnotify = "^0.3.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
